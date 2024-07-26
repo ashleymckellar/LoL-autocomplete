@@ -14,7 +14,7 @@ export const Search = () => {
     const handleChange = (input) => {
         let matches = [];
         if (input.length > 2) {
-            const regex = new RegExp(`^${input.slice(0, 3)}`, 'i');
+            const regex = new RegExp(`^${input}`, 'i');
 
             for (const str of leg) {
                 if (regex.test(str)) {
