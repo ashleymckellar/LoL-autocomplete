@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #005CDE;
+    --secondary-color: #1C1C1C;
+    --accent-color: #c89b3c;
+    --button-color: #c89b3c;
+}
+
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('/src/font/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spiegel-Regular';
+    src: url('src/font/Spiegel-OTF/Spiegel-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'BeaufortforLOL';
+}
+
+button{
+    background-color: var(--button-color);
+}
+
+p{
+    font-family: 'Spiegel-Regular';
+}

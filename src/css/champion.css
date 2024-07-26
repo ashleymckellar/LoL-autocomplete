@@ -1,0 +1,97 @@
+.champion-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.champion-container > form {
+    align-self: end;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;    border-radius: 10px;
+}
+
+.champion-container > form > select{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.champion-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 10px;
+}
+
+.champion{
+    width: 20vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+}
+
+.champion:hover{
+    transform: scale(1.05);
+}
+
+.champion-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay-off{
+    display: none;
+}
+
+.modal-off{
+    display: none;
+}
+
+.overlay-on{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.modal-on{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.modal-btn{
+    width: 100%;
+    height: 100%;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.modal-btn:hover{
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}

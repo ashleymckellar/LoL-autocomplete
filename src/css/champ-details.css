@@ -1,0 +1,83 @@
+.champ-detail-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 3%;
+}
+
+.champ-detail-container > img{
+    align-self: end;
+    width: 25%;
+    position: fixed;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.champ-detail-container > img:hover{
+    transform: scale(1.05);
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.text-container > div{
+    margin-bottom: 25px;
+    padding: 2%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.text-container > div:hover{
+    transform: scale(1.05);
+}
+
+.spell {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+
+
+.spell > img {
+    position: absolute;
+    align-self: end;
+    border-radius: 10px;
+}
+
+.spell > div {
+    width: 80%;
+}
+
+.spell > div > * {
+    margin-bottom: 5px;
+}
+
+.passive{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.passive > img {
+    position: absolute;
+    align-self: end;
+    border-radius: 10px;
+}
+
+.passive > div {
+    margin-top: 10px;
+}
+
+.passive > div > * {
+    margin-top: 10px;
+}

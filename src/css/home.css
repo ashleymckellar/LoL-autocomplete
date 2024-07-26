@@ -1,0 +1,26 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.home-container > p{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.home-container > h1{
+    font-size: 3rem;
+}
+
+.home-container > img{
+    width: 80%;
+    margin: 10px;
+}
+
+button{
+    font-family: 'Spiegel-Regular';
+}
