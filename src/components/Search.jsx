@@ -1,7 +1,7 @@
-
-
 import { useState, useContext } from 'react';
 import { Context } from '../context/ContextProvider';
+import { useNavigate } from 'react-router-dom';
+import '../css/search.css';
 
 export const Search = () => {
     const { legends } = useContext(Context);
@@ -9,7 +9,8 @@ export const Search = () => {
     const [formData, setFormData] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const leg = legends.map((person) => person.name);
-    console.log(leg);
+    const navigate = useNavigate();
+    // const {id} = useParams()
 
     const handleChange = (input) => {
         let matches = [];
@@ -21,7 +22,7 @@ export const Search = () => {
                     matches.push(str);
                 }
             }
-            console.log(matches);
+            // console.log(matches);
             setSuggestions(matches);
         } else {
             setSuggestions([]);
@@ -29,21 +30,45 @@ export const Search = () => {
         setFormData(input);
     };
 
+    // console.log(suggestions);
+    // console.log(legends);
+
+    const handleChampionClick = (name) => {
+        const selectedLegend = legends.find((legend) => legend.name === name);
+        if (selectedLegend) {
+            navigate(`../champions/${selectedLegend.id}`);
+        }
+    };
+
+    // const onClick = () => {
+    //     handleChampionClick()
+    // }
+
     return (
         <>
-            <h1>Search Legends</h1>
-            <form>
-                <input
-                    type="text"
-                    onChange={(e) => handleChange(e.target.value)}
-                    value={formData}
-                />
-            </form>
+            <div className="legend-container">
+                <h1 className='search-h1'>Search Champions</h1>
+                <form>
+                    <input
+                        type="text"
+                        onChange={(e) => handleChange(e.target.value)}
+                        value={formData}
+                        className='search-form'
+                    />
+                </form>
+            </div>
 
             {suggestions.length > 0 && (
-                <div>
+                <div className="suggestion-flex">
                     {suggestions.map((suggestion, i) => (
-                        <p key={i}>{suggestion}</p>
+                        <button
+                            className="suggestion-btn"
+                            key={i}
+                            type="button"
+                            onClick={() => handleChampionClick(suggestion)}
+                        >
+                            <p className="suggestion">{suggestion}</p>
+                        </button>
                     ))}
                 </div>
             )}
@@ -52,4 +77,3 @@ export const Search = () => {
 };
 
 export default Search;
-

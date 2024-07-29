@@ -17,3 +17,9 @@
     padding: 5px;
     border-radius: 5px;
 }
+
+.suggestion {
+    font-family: 'Spiegel-Regular';
+    font-size: 20px;
+    font-color: black;
+}

@@ -1,0 +1,53 @@
+.legend-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.legend-container > form {
+    align-self: center;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;    border-radius: 10px;
+}
+
+.search-h1 {
+    font-size: 3rem;
+}
+
+.search-form {
+    height: 4vh;
+    width: 20vw;
+    border-radius: 10px;
+    padding: 5px;
+}
+.suggestion-btn{
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 5vh;
+    width: 10vw;
+}
+
+.headline-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.suggestion-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.suggestion {
+    font-family: 'Spiegel-Regular';
+    font-size: 20px;
+    font-color: black;
+}

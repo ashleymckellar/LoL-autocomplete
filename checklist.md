@@ -3,7 +3,7 @@
 ## Feature Implementation
 - [] Add a search bar to the `ChampionList` component
 - [] Implement autofill functionality that activates after typing 3 letters
-use handleChange?  check to see how many characters
+
 
 - [] Ensure that clicking on an autofilled value navigates to the champion details page
 use useNavigate 

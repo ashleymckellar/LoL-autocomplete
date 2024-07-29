@@ -28,7 +28,7 @@ export default function ChampionList() {
         }
     }
 
-    console.log(filteredArr)
+    // console.log(filteredArr)
 
     const legendElements = filteredArr.map(legend => {
         return (

@@ -30,7 +30,7 @@ export default function ChampionDetails() {
         title
     } = champion;
 
-    console.log(champion)
+    // console.log(champion)
 
     const fullImageUrl = `https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${image.full}`;
     const passiveImageUrl = `https://ddragon.leagueoflegends.com/cdn/11.9.1/img/passive/${passive.image.full}`;
